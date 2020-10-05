@@ -1,7 +1,73 @@
 /*Custom styles*/
 
+/* NAV BAR */
 
+@media (min-width: 800px) {
 
+    .nav {
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      list-style: none;
+      z-index: 997;
+    }
+    
+    @media (min-width: 500px) and (min-height: 375px) {
+      .nav {
+        display: block;
+      }
+    }
+}
+
+.nav > .dot-nav {
+	position: fixed;
+	z-index: 9999;
+	right: 50px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.nav > .dot-nav a {
+	display: block;
+	position: relative;
+	color: transparent;
+	height: 30px;
+}
+
+.dot-nav {
+    color: transparent;
+}
+
+.nav > .dot-nav a:after {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+}
+
+.nav > .dot-nav a:hover:after {
+	background: rgba(255,255,255,0.6);
+}
+
+.nav > .dot-nav a.active::after {
+	background: #fff !important;
+}
+
+.nav section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
 
 /*Headings*/
 
@@ -72,57 +138,74 @@ p {
 }
 
 /*Slides backgrounds*/
+
+.section{
+    padding-top: 0px;
+}
+
 /*Home*/
 
 .slide0 {
     background:
         linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)),
         url(../img/img_parallax.jpg) no-repeat center;
+    -webkit-background-size: cover;
     background-size: cover;
-
+    background-attachment: fixed;
 }
 
 .slide1 {
     background:
         linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)),
         url(../img/img_parallax6.jpg) no-repeat center;
+    -webkit-background-size: cover;
     background-size: cover;
-
+    background-attachment: fixed;
 }
 
 .slide2 {
     background:
         linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)),
         url(../img/img_parallax2.jpg) no-repeat center;
+    -webkit-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .slide3 {
     background:
         linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)),
         url(../img/img_parallax3.jpg) no-repeat center;
+    -webkit-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .slide4 {
     background:
         linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)),
         url(../img/img_parallax4.jpg) no-repeat center;
+    -webkit-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .slide7 {
     background:
         linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)),
         url(../img/img_parallax7.jpg) no-repeat center;
+    -webkit-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .slide8 {
     background:
         linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)),
         url(../img/img_parallax8.jpg) no-repeat center;
+    -webkit-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -159,16 +242,15 @@ p {
 
 
 .video-background-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
 }
-
 
 /*Yemen*/
 
@@ -196,7 +278,9 @@ p {
 
 .fullpage-wrapper {
 	width: 100%!important;
-	transform: none!important;
+    transform: none!important;
+    overflow: hidden;
+    padding-top: 0%;
 }
 
 .fp-section {
@@ -207,7 +291,8 @@ p {
 	visibility: hidden;
 	opacity: 0;
 	z-index: 0;
-	transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+    overflow: hidden;
 }
 
 .fp-section.active {
@@ -216,13 +301,17 @@ p {
 	z-index: 1;
 }
 
+.fp-tableCell {
+    padding-top: 0%;
+}
+
 /*Text background*/
 
 .text-with-bk {
     color: #ffffff;
     text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 2px, rgba(0, 0, 0, 0.3) 0px 0px 20px;
     /*    font-family: "nyt-cheltenham-sh", "nyt-cheltenham", georgia, "times new roman", times, serif;*/
-    margin: 0 25px;
+    margin: 0 20px;
 }
 
 .text-with-bk .text-original span {
@@ -231,12 +320,16 @@ p {
     box-shadow: 15px 7px 0 #272727, -15px -5px 0 #272727, 15px -5px 0 #272727, -15px 7px 0 #272727;
     opacity: 0.5;
     color: transparent;
+    text-align: justify;
+    overflow: hidden;
 }
 
 
 .text-with-bk {
     position: relative;
     margin: 30px 50px;
+    text-align: justify;
+    overflow: hidden;
 }
 
 
@@ -248,6 +341,8 @@ p {
     box-shadow: none;
     position: absolute;
     opacity: 1;
+    text-align: justify;
+    overflow: hidden;
 }
 
 .text-with-bk .text-duplicate span {
@@ -255,6 +350,9 @@ p {
     display: inline;
     background-color: transparent;
     box-shadow: inset 15px 7px 0 transparent, inset -15px -5px 0 transparent, inset 15px -5px 0 transparent, inset -15px 7px 0 transparent;
+    text-align: justify;
+    overflow: hidden;
 }
+
 
 
