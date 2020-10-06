@@ -152,14 +152,18 @@ p {
 }
 
 .para3 {
-    padding-top: 8%;
+    padding-top: 12%;
 }
 
 .para4 {
-    padding-top: 8%;
+    padding-top: 12%;
 }
 
 .head3 {
+    padding-top: 4%;
+}
+
+.para5 {
     padding-top: 4%;
 }
 
@@ -168,7 +172,7 @@ p {
 }
 
 .para7 {
-    padding-top: 5%;
+    padding-top: 4%;
 }
 
 .para8 {
@@ -176,7 +180,7 @@ p {
 }
 
 .para9 {
-    padding-top: 10%;
+    padding-top: 15%;
 }
 
 /*Home*/

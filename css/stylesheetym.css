@@ -1,0 +1,362 @@
+/*Custom styles*/
+
+/* NAV BAR */
+
+@media (min-width: 800px) {
+
+    .nav {
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      list-style: none;
+      z-index: 997;
+    }
+    
+    @media (min-width: 500px) and (min-height: 375px) {
+      .nav {
+        display: block;
+      }
+    }
+}
+
+.nav > .dot-nav {
+	position: fixed;
+	z-index: 9999;
+	right: 50px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.nav > .dot-nav a {
+	display: block;
+	position: relative;
+	color: transparent;
+	height: 30px;
+}
+
+.dot-nav {
+    color: transparent;
+}
+
+.nav > .dot-nav a:after {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+}
+
+.nav > .dot-nav a:hover:after {
+	background: rgba(255,255,255,0.6);
+}
+
+.nav > .dot-nav a.active::after {
+	background: #fff !important;
+}
+
+.nav section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*Headings*/
+
+h1 {
+    font-size: 3.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    line-height: 1.3;
+    letter-spacing: 1.2px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+/*Fonts*/
+
+p {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.35em;
+    line-height: 1.5;
+    letter-spacing: .003em;
+    font-weight: 300;
+}
+
+.caption p,
+.note {
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8em;
+
+}
+
+@media only screen and (max-width : 576px) {
+
+    h1 {
+        font-size: 2.5em;
+
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .caption p {
+        font-size: .5em;
+
+    }
+}
+
+/*Colors*/
+.ochablue {
+    color: #418fde;
+}
+
+/*Other sections*/
+.main-title {
+    position: absolute;
+    top: 5%;
+}
+
+.caption {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    max-width: 350px;
+
+}
+
+/*Slides backgrounds*/
+
+.head1 {
+    padding-top: 3%;
+}
+
+.para1 {
+    padding-top: 2%;
+}
+
+.para2 {
+    padding-top: 10%;
+}
+
+.para3 {
+    padding-top: 10%;
+}
+
+.para4 {
+    padding-top: 8%;
+}
+
+.para5 {
+    padding-top: 12%;
+}
+
+.para6 {
+    padding-top: 4%;
+}
+
+.head2 {
+    padding-top: 2%;
+}
+
+.para8 {
+    padding-top: 10%;
+}
+/*Home*/
+
+.slide0 {
+    background:
+        linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)),
+        url(../img/ym_slide0.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slide2 {
+    background:
+        linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)),
+        url(../img/ym_slide2.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slide3 {
+    background:
+        linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)),
+        url(../img/ym_slide3.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slide4 {
+    background:
+        linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)),
+        url(../img/ym_slide4.png) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slide5 {
+    background:
+        linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)),
+        url(../img/ym_slide5.png) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slide7 {
+    background:
+        linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)),
+        url(../img/ym_slide7.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Video background*/
+
+video {
+    width: 100% !important;
+}
+
+.video-background-holder {
+    position: relative;
+    background-color: black;
+    height: calc(100vh- 72px);
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-background-holder video {
+    position: absolute;
+    top: 50%;
+    left: 50%;      
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.video-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* FADE EFFECT */
+
+.fullpage-wrapper {
+	width: 100%!important;
+    transform: none!important;
+    overflow: hidden;
+    padding-top: 0%;
+}
+
+.fp-section {
+	width: 100%!important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 0;
+    transition: all .7s ease-in-out;
+    overflow: hidden;
+}
+
+.fp-section.active {
+	visibility: visible;
+	opacity: 1;
+	z-index: 1;
+}
+
+.fp-tableCell {
+    display: list-item;
+    vertical-align: top;
+}
+
+/*Text background*/
+
+.text-with-bk {
+    color: #ffffff;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 2px, rgba(0, 0, 0, 0.3) 0px 0px 20px;
+    /*    font-family: "nyt-cheltenham-sh", "nyt-cheltenham", georgia, "times new roman", times, serif;*/
+    margin: 0 20px;
+}
+
+.text-with-bk .text-original span {
+    display: inline;
+    background-color: #272727;
+    box-shadow: 15px 7px 0 #272727, -15px -5px 0 #272727, 15px -5px 0 #272727, -15px 7px 0 #272727;
+    opacity: 0.5;
+    color: transparent;
+    text-align: justify;
+    overflow: hidden;
+}
+
+
+.text-with-bk {
+    position: relative;
+    margin: 30px 50px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+
+.text-with-bk .text-duplicate {
+    top: 0;
+    left: 0;
+    display: inline-block;
+    z-index: 2;
+    box-shadow: none;
+    position: absolute;
+    opacity: 1;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.text-with-bk .text-duplicate span {
+    color: white;
+    display: inline;
+    background-color: transparent;
+    box-shadow: inset 15px 7px 0 transparent, inset -15px -5px 0 transparent, inset 15px -5px 0 transparent, inset -15px 7px 0 transparent;
+    text-align: justify;
+    overflow: hidden;
+}
+
+
+
