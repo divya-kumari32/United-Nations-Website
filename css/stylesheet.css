@@ -247,10 +247,10 @@ p {
 
 /*Video background*/
 
-/* video {
-    height: 100% !important;
+
+video {
     width: 100% !important;
-} */
+}
 
 .video-background-holder {
     position: relative;
