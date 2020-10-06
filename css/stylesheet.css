@@ -139,8 +139,44 @@ p {
 
 /*Slides backgrounds*/
 
-.section{
-    padding-top: 0px;
+.head1 {
+    padding-top: 2%;
+}
+
+.para1 {
+    padding-top: 2%;
+}
+
+.head2 {
+    padding-top: 5%;
+}
+
+.para3 {
+    padding-top: 8%;
+}
+
+.para4 {
+    padding-top: 8%;
+}
+
+.head3 {
+    padding-top: 4%;
+}
+
+.para6 {
+    padding-top: 4%;
+}
+
+.para7 {
+    padding-top: 5%;
+}
+
+.para8 {
+    padding-top: 15%;
+}
+
+.para9 {
+    padding-top: 10%;
 }
 
 /*Home*/
@@ -211,10 +247,15 @@ p {
 
 /*Video background*/
 
+/* video {
+    height: 100% !important;
+    width: 100% !important;
+} */
+
 .video-background-holder {
     position: relative;
     background-color: black;
-    height: calc(100vh - 72px);
+    height: calc(100vh- 72px);
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
@@ -223,7 +264,7 @@ p {
 .video-background-holder video {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%;      
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -302,7 +343,8 @@ p {
 }
 
 .fp-tableCell {
-    padding-top: 0%;
+    display: list-item;
+    vertical-align: top;
 }
 
 /*Text background*/
